@@ -40,9 +40,9 @@ const profileData = {
   ],
   portfolio: [
     { id: 1, title: "Campaña de Expectativa", category: "Estrategias de comunicación", image: "https://images.unsplash.com/photo-1557838923-2985c318be48?auto=format&fit=crop&q=80&w=600&h=400" },
-    { id: 2, title: "Reel Promocional", category: "Audiovisual", image: "https://images.unsplash.com/photo-1536240478700-b869070f9279?auto=format&fit=crop&q=80&w=600&h=400" },
+    { id: 2, title: "Reel Promocional", category: "Audiovisual", image: "https://images.unsplash.com/photo-1535016120720-40c746a6580c?auto=format&fit=crop&q=80&w=600&h=400" },
     { id: 3, title: "Identidad Visual", category: "Piezas gráficas", image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&q=80&w=600&h=400" },
-    { id: 4, title: "Artículo de Opinión", category: "Contenido y redacción", image: "https://images.unsplash.com/photo-1455390582262-044cdead2708?auto=format&fit=crop&q=80&w=600&h=400" },
+    { id: 4, title: "Artículo de Opinión", category: "Contenido y redacción", image: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?auto=format&fit=crop&q=80&w=600&h=400" },
     { id: 5, title: "Plan de Medios", category: "Estrategias de comunicación", image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=600&h=400" },
     { id: 6, title: "Fotografía Documental", category: "Audiovisual", image: "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&q=80&w=600&h=400" },
   ],
