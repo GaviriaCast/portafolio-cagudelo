@@ -163,14 +163,13 @@ const Hero = ({ isDarkMode }) => {
           initial="hidden"
           animate="visible"
           variants={staggerContainer}
-          className="order-2 md:order-1 bg-background/85 backdrop-blur-lg p-8 md:p-12 rounded-[2rem] border border-border shadow-2xl"
+          className="order-2 md:order-1 bg-background/95 backdrop-blur-3xl p-8 md:p-12 rounded-[2rem] border border-border shadow-2xl"
         >
           <motion.h2 variants={fadeUp} className="text-sm font-semibold tracking-widest text-secondary uppercase mb-4">
             {profileData.role}
           </motion.h2>
-          <motion.h1 variants={fadeUp} className="text-5xl md:text-7xl font-light text-foreground tracking-tight leading-tight mb-6">
-            Hola, soy <br />
-            <span className="font-medium text-secondary">{profileData.name.split(' ')[0]} {profileData.name.split(' ')[1]}</span>
+          <motion.h1 variants={fadeUp} className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light text-foreground tracking-tight leading-tight mb-6">
+            Hola, soy <span className="font-medium text-foreground">{profileData.name.split(' ')[0]} {profileData.name.split(' ')[1]}</span>
           </motion.h1>
           <motion.p variants={fadeUp} className="text-lg md:text-xl text-muted-foreground font-light leading-relaxed mb-10 max-w-lg">
             {profileData.profile}
