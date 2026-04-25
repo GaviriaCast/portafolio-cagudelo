@@ -4,23 +4,24 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
-        background: '#27272A',
-        foreground: '#F4F4F5',
+        background: 'var(--background)',
+        foreground: 'var(--foreground)',
         primary: {
-          DEFAULT: '#1E4746',
-          hover: '#2A6B68',
+          DEFAULT: 'var(--primary)',
+          hover: 'var(--primary-hover)',
         },
         secondary: {
-          DEFAULT: '#D26E4B',
+          DEFAULT: 'var(--secondary)',
         },
         muted: {
-          DEFAULT: '#18181B',
-          foreground: '#A1A1AA',
+          DEFAULT: 'var(--muted)',
+          foreground: 'var(--muted-foreground)',
         },
-        border: '#3F3F46',
+        border: 'var(--border)',
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],

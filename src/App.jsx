@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence, useScroll, useTransform } from 'framer-motion';
 import {
   Mail,
@@ -12,7 +12,9 @@ import {
   Search,
   Users,
   Star,
-  ChevronRight
+  ChevronRight,
+  Sun,
+  Moon
 } from 'lucide-react';
 
 const profileData = {
@@ -40,7 +42,7 @@ const profileData = {
   ],
   portfolio: [
     { id: 1, title: "Campaña de Expectativa", category: "Estrategias de comunicación", image: "https://images.unsplash.com/photo-1557838923-2985c318be48?auto=format&fit=crop&q=80&w=600&h=400" },
-    { id: 2, title: "Reel Promocional", category: "Audiovisual", image: "https://images.unsplash.com/photo-1535016120720-40c746a6580c?auto=format&fit=crop&q=80&w=600&h=400" },
+    { id: 2, title: "Reel Promocional", category: "Audiovisual", image: "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&q=80&w=600&h=400" },
     { id: 3, title: "Identidad Visual", category: "Piezas gráficas", image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&q=80&w=600&h=400" },
     { id: 4, title: "Artículo de Opinión", category: "Contenido y redacción", image: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?auto=format&fit=crop&q=80&w=600&h=400" },
     { id: 5, title: "Plan de Medios", category: "Estrategias de comunicación", image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=600&h=400" },
@@ -64,7 +66,7 @@ const staggerContainer = {
   }
 };
 
-const Navbar = () => {
+const Navbar = ({ isDarkMode, toggleDarkMode }) => {
   const [isOpen, setIsOpen] = useState(false);
   const links = [
     { name: "Inicio", href: "#inicio" },
@@ -83,7 +85,7 @@ const Navbar = () => {
             </a>
           </div>
 
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex items-center space-x-8">
             {links.map((link) => (
               <a
                 key={link.name}
@@ -93,9 +95,15 @@ const Navbar = () => {
                 {link.name}
               </a>
             ))}
+            <button onClick={toggleDarkMode} className="text-muted-foreground hover:text-secondary transition-colors" aria-label="Toggle Dark Mode">
+              {isDarkMode ? <Sun size={20} /> : <Moon size={20} />}
+            </button>
           </div>
 
-          <div className="md:hidden">
+          <div className="md:hidden flex items-center gap-4">
+            <button onClick={toggleDarkMode} className="text-muted-foreground hover:text-secondary transition-colors" aria-label="Toggle Dark Mode">
+              {isDarkMode ? <Sun size={20} /> : <Moon size={20} />}
+            </button>
             <button onClick={() => setIsOpen(!isOpen)} className="text-muted-foreground hover:text-secondary">
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -130,7 +138,7 @@ const Navbar = () => {
   );
 };
 
-const Hero = () => {
+const Hero = ({ isDarkMode }) => {
   const { scrollY } = useScroll();
   const y = useTransform(scrollY, [0, 800], [0, 400]);
   const opacity = useTransform(scrollY, [0, 600], [1, 0]);
@@ -142,11 +150,11 @@ const Hero = () => {
         style={{ y, opacity }}
         className="absolute inset-0 z-0 pointer-events-none"
       >
-        <div className="absolute inset-0 bg-background/85 z-10 backdrop-blur-[2px]"></div>
+        <div className="absolute inset-0 bg-background/85 z-10 backdrop-blur-[2px] transition-colors duration-300"></div>
         <img 
-          src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1920" 
+          src={isDarkMode ? "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1920" : "https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80&w=1920"} 
           alt="Background" 
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover transition-opacity duration-500"
         />
       </motion.div>
 
@@ -395,10 +403,20 @@ const Footer = () => {
 };
 
 function App() {
+  const [isDarkMode, setIsDarkMode] = useState(true);
+
+  useEffect(() => {
+    if (isDarkMode) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  }, [isDarkMode]);
+
   return (
-    <div className="min-h-screen bg-background text-foreground font-sans selection:bg-primary/20">
-      <Navbar />
-      <Hero />
+    <div className="min-h-screen bg-background text-foreground font-sans selection:bg-primary/20 transition-colors duration-300">
+      <Navbar isDarkMode={isDarkMode} toggleDarkMode={() => setIsDarkMode(!isDarkMode)} />
+      <Hero isDarkMode={isDarkMode} />
       <About />
       <Skills />
       <Portfolio />
