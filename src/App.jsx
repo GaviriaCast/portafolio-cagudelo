@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, useScroll, useTransform } from 'framer-motion';
 import {
   Mail,
   Menu,
@@ -131,9 +131,26 @@ const Navbar = () => {
 };
 
 const Hero = () => {
+  const { scrollY } = useScroll();
+  const y = useTransform(scrollY, [0, 800], [0, 400]);
+  const opacity = useTransform(scrollY, [0, 600], [1, 0]);
+
   return (
-    <section id="inicio" className="pt-32 pb-20 md:pt-48 md:pb-32 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto min-h-screen flex items-center">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    <section id="inicio" className="relative pt-32 pb-20 md:pt-48 md:pb-32 px-4 sm:px-6 lg:px-8 min-h-screen flex items-center overflow-hidden">
+      
+      <motion.div 
+        style={{ y, opacity }}
+        className="absolute inset-0 z-0 pointer-events-none"
+      >
+        <div className="absolute inset-0 bg-background/85 z-10 backdrop-blur-[2px]"></div>
+        <img 
+          src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80&w=1920" 
+          alt="Background" 
+          className="w-full h-full object-cover"
+        />
+      </motion.div>
+
+      <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-7xl mx-auto w-full">
         <motion.div
           initial="hidden"
           animate="visible"
