@@ -150,7 +150,7 @@ const Hero = ({ isDarkMode }) => {
         style={{ y, opacity }}
         className="absolute inset-0 z-0 pointer-events-none"
       >
-        <div className="absolute inset-0 bg-background/90 z-10 backdrop-blur-sm transition-colors duration-300"></div>
+        <div className="absolute inset-0 bg-background/40 z-10 backdrop-blur-[2px] transition-colors duration-300"></div>
         <img 
           src={isDarkMode ? "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1920" : "https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&q=80&w=1920"} 
           alt="Background" 
@@ -163,7 +163,7 @@ const Hero = ({ isDarkMode }) => {
           initial="hidden"
           animate="visible"
           variants={staggerContainer}
-          className="order-2 md:order-1"
+          className="order-2 md:order-1 bg-background/85 backdrop-blur-lg p-8 md:p-12 rounded-[2rem] border border-border shadow-2xl"
         >
           <motion.h2 variants={fadeUp} className="text-sm font-semibold tracking-widest text-secondary uppercase mb-4">
             {profileData.role}
