@@ -152,7 +152,7 @@ const Hero = ({ isDarkMode }) => {
       >
         <div className="absolute inset-0 bg-background/40 z-10 backdrop-blur-[2px] transition-colors duration-300"></div>
         <img 
-          src={isDarkMode ? "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1920" : "https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&q=80&w=1920"} 
+          src={isDarkMode ? "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1920" : "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=1920"} 
           alt="Background" 
           className="w-full h-full object-cover transition-opacity duration-500"
         />
@@ -163,13 +163,14 @@ const Hero = ({ isDarkMode }) => {
           initial="hidden"
           animate="visible"
           variants={staggerContainer}
-          className="order-2 md:order-1 bg-background/95 backdrop-blur-3xl p-8 md:p-12 rounded-[2rem] border border-border shadow-2xl"
+          className="order-2 md:order-1 bg-background p-8 md:p-12 rounded-[2rem] border border-border shadow-2xl"
         >
           <motion.h2 variants={fadeUp} className="text-sm font-semibold tracking-widest text-secondary uppercase mb-4">
             {profileData.role}
           </motion.h2>
           <motion.h1 variants={fadeUp} className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light text-foreground tracking-tight leading-tight mb-6">
-            Hola, soy <span className="font-medium text-foreground">{profileData.name.split(' ')[0]} {profileData.name.split(' ')[1]}</span>
+            Hola, soy <br className="hidden xl:block" />
+            <span className="font-medium text-foreground whitespace-nowrap">{profileData.name.split(' ')[0]} {profileData.name.split(' ')[1]}</span>
           </motion.h1>
           <motion.p variants={fadeUp} className="text-lg md:text-xl text-muted-foreground font-light leading-relaxed mb-10 max-w-lg">
             {profileData.profile}
