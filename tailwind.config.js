@@ -7,8 +7,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: '#FDFCF8',
-        foreground: '#1C2127',
+        background: '#E2DFDA',
+        foreground: '#1F2428',
         primary: {
           DEFAULT: '#1E4746',
           hover: '#153332',
@@ -17,10 +17,10 @@ export default {
           DEFAULT: '#D26E4B',
         },
         muted: {
-          DEFAULT: '#F3F1EA',
-          foreground: '#666E75',
+          DEFAULT: '#D6D3CD',
+          foreground: '#5A6268',
         },
-        border: '#E2DECE',
+        border: '#C2BDB6',
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
