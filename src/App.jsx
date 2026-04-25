@@ -78,7 +78,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <div className="flex-shrink-0">
-            <a href="#inicio" className="text-xl font-light tracking-widest text-primary uppercase">
+            <a href="#inicio" className="text-xl font-light tracking-widest text-foreground uppercase">
               C. Agudelo
             </a>
           </div>
@@ -88,7 +88,7 @@ const Navbar = () => {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-muted-foreground hover:text-primary text-sm font-medium tracking-wide transition-colors"
+                className="text-muted-foreground hover:text-secondary text-sm font-medium tracking-wide transition-colors"
               >
                 {link.name}
               </a>
@@ -96,7 +96,7 @@ const Navbar = () => {
           </div>
 
           <div className="md:hidden">
-            <button onClick={() => setIsOpen(!isOpen)} className="text-muted-foreground hover:text-primary">
+            <button onClick={() => setIsOpen(!isOpen)} className="text-muted-foreground hover:text-secondary">
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
           </div>
@@ -117,7 +117,7 @@ const Navbar = () => {
                   key={link.name}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className="block px-3 py-3 text-base font-medium text-muted-foreground hover:text-primary hover:bg-muted rounded-md"
+                  className="block px-3 py-3 text-base font-medium text-muted-foreground hover:text-secondary hover:bg-muted rounded-md"
                 >
                   {link.name}
                 </a>
@@ -144,7 +144,7 @@ const Hero = () => {
       >
         <div className="absolute inset-0 bg-background/85 z-10 backdrop-blur-[2px]"></div>
         <img 
-          src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80&w=1920" 
+          src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1920" 
           alt="Background" 
           className="w-full h-full object-cover"
         />
@@ -162,7 +162,7 @@ const Hero = () => {
           </motion.h2>
           <motion.h1 variants={fadeUp} className="text-5xl md:text-7xl font-light text-foreground tracking-tight leading-tight mb-6">
             Hola, soy <br />
-            <span className="font-medium text-primary">{profileData.name.split(' ')[0]} {profileData.name.split(' ')[1]}</span>
+            <span className="font-medium text-secondary">{profileData.name.split(' ')[0]} {profileData.name.split(' ')[1]}</span>
           </motion.h1>
           <motion.p variants={fadeUp} className="text-lg md:text-xl text-muted-foreground font-light leading-relaxed mb-10 max-w-lg">
             {profileData.profile}
@@ -245,7 +245,7 @@ const Skills = () => {
                   variants={fadeUp}
                   className="flex items-center p-4 bg-background border border-border rounded-xl hover:shadow-md hover:border-primary/20 transition-all group"
                 >
-                  <div className="flex-shrink-0 mr-4 text-primary/60 group-hover:text-primary transition-colors">
+                  <div className="flex-shrink-0 mr-4 text-secondary/70 group-hover:text-secondary transition-colors">
                     <Icon size={24} strokeWidth={1.5} />
                   </div>
                   <span className="text-foreground font-medium">{strength.name}</span>
