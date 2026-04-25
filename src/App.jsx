@@ -150,9 +150,9 @@ const Hero = ({ isDarkMode }) => {
         style={{ y, opacity }}
         className="absolute inset-0 z-0 pointer-events-none"
       >
-        <div className="absolute inset-0 bg-background/85 z-10 backdrop-blur-[2px] transition-colors duration-300"></div>
+        <div className="absolute inset-0 bg-background/90 z-10 backdrop-blur-sm transition-colors duration-300"></div>
         <img 
-          src={isDarkMode ? "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1920" : "https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80&w=1920"} 
+          src={isDarkMode ? "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1920" : "https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&q=80&w=1920"} 
           alt="Background" 
           className="w-full h-full object-cover transition-opacity duration-500"
         />
