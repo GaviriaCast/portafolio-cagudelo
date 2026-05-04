@@ -25,7 +25,7 @@ const profileData = {
   email: "carolinaagudelo783@gmail.com",
   socials: {
     linkedin: "#",
-    instagram: "#",
+    instagram: "https://www.instagram.com/carolina.agudelo0",
   },
   strengths: [
     { name: "Redacción creativa", icon: PenTool },
@@ -41,12 +41,108 @@ const profileData = {
     "Canva", "Photoshop", "Illustrator", "Premiere", "InDesign", "After Effects", "Audition", "CapCut", "Office", "Google Workspace"
   ],
   portfolio: [
-    { id: 1, title: "Campaña de Expectativa", category: "Estrategias de comunicación", image: "https://images.unsplash.com/photo-1557838923-2985c318be48?auto=format&fit=crop&q=80&w=600&h=400" },
-    { id: 2, title: "Reel Promocional", category: "Audiovisual", image: "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&q=80&w=600&h=400" },
-    { id: 3, title: "Identidad Visual", category: "Piezas gráficas", image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&q=80&w=600&h=400" },
-    { id: 4, title: "Artículo de Opinión", category: "Contenido y redacción", image: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?auto=format&fit=crop&q=80&w=600&h=400" },
-    { id: 5, title: "Plan de Medios", category: "Estrategias de comunicación", image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=600&h=400" },
-    { id: 6, title: "Fotografía Documental", category: "Audiovisual", image: "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&q=80&w=600&h=400" },
+    {
+      id: 1,
+      title: "Plantilla de instructivo",
+      category: "Piezas gráficas",
+      image: `${import.meta.env.BASE_URL}PiezasGraficas/PlantilladeInstructivo/image003.png`,
+      description: "Desarrollo de una plantilla para un instructivo automatizado, facilitando el envío de procesos estandarizados a través del correo electrónico."
+    },
+    {
+      id: 2,
+      title: "Presentación concurso Ser Ejemplo",
+      category: "Piezas gráficas",
+      image: `${import.meta.env.BASE_URL}PiezasGraficas/PresentacionConcursoSerEjemplo/Diapositiva1.PNG`,
+      description: "Creación de la presentación de una de las exposiciones ganadoras del concurso más importante de la organización, destacando los datos y mensajes más relevantes.",
+      images: [
+        `${import.meta.env.BASE_URL}PiezasGraficas/PresentacionConcursoSerEjemplo/Diapositiva1.PNG`,
+        `${import.meta.env.BASE_URL}PiezasGraficas/PresentacionConcursoSerEjemplo/Diapositiva2.PNG`,
+        `${import.meta.env.BASE_URL}PiezasGraficas/PresentacionConcursoSerEjemplo/Diapositiva3.PNG`,
+        `${import.meta.env.BASE_URL}PiezasGraficas/PresentacionConcursoSerEjemplo/Diapositiva4.PNG`,
+        `${import.meta.env.BASE_URL}PiezasGraficas/PresentacionConcursoSerEjemplo/Diapositiva5.PNG`
+      ]
+    },
+    {
+      id: 3,
+      title: "Brief Comité Regulatorio",
+      category: "Contenido y redacción",
+      image: `${import.meta.env.BASE_URL}ContenidoyRedaccion/BriefComiteRegulatorio/Brief Comité Regulatorio.png`,
+      description: "Creación y diseño del brief del Comité Regulatorio, un comité interno. Se trata de un documento conciso y estratégico que recopila información clave sobre el proyecto y funciona como una hoja de ruta dirigida a algunos vicepresidentes de la organización."
+    },
+    {
+      id: 4,
+      title: "La Liga del Cumplimiento",
+      category: "Estrategias de comunicación",
+      image: `${import.meta.env.BASE_URL}EstrategiasdeComunicacion/LaLigadelCumplimiento/Diapositiva1_1.PNG`,
+      description: "Estrategia orientada a comunicar la evolución del Comité Regulatorio. En el contexto previo al Mundial 2026, se empleó un lenguaje futbolístico para facilitar la comprensión y promover la apropiación de los mensajes transversales, los cuales explican las nuevas reglas, roles, acompañamientos, métricas y expectativas.\n\nPúblico objetivo: Toda la organización.",
+      sections: [
+        {
+          title: "Fase pretemporada",
+          description: "Infográfico difundido por el área de Comunicaciones Corporativas a toda la organización. Su objetivo fue dar a conocer la información nueva y actualizada del Comité Regulatorio, promoviendo que tanto los colaboradores directamente involucrados como aquellos que no lo están se mantengan informados sobre sus novedades y su propósito.",
+          images: [`${import.meta.env.BASE_URL}EstrategiasdeComunicacion/LaLigadelCumplimiento/Diapositiva1_1.PNG`]
+        },
+        {
+          title: "Íconos e ilustraciones",
+          description: "Línea gráfica con temática de fútbol que refuerza el lenguaje utilizado para comunicar la estrategia.",
+          images: [
+            `${import.meta.env.BASE_URL}EstrategiasdeComunicacion/LaLigadelCumplimiento/CANCHA-01.png`,
+            `${import.meta.env.BASE_URL}EstrategiasdeComunicacion/LaLigadelCumplimiento/CANCHA-02.png`,
+            `${import.meta.env.BASE_URL}EstrategiasdeComunicacion/LaLigadelCumplimiento/CANCHA-03.png`,
+            `${import.meta.env.BASE_URL}EstrategiasdeComunicacion/LaLigadelCumplimiento/ILUSTRACIONES 2-02.png`,
+            `${import.meta.env.BASE_URL}EstrategiasdeComunicacion/LaLigadelCumplimiento/ILUSTRACIONES 2-03.png`,
+            `${import.meta.env.BASE_URL}EstrategiasdeComunicacion/LaLigadelCumplimiento/ILUSTRACIONES 2-04.png`,
+            `${import.meta.env.BASE_URL}EstrategiasdeComunicacion/LaLigadelCumplimiento/ILUSTRACIONES 2-05.png`,
+            `${import.meta.env.BASE_URL}EstrategiasdeComunicacion/LaLigadelCumplimiento/ILUSTRACIONES 2-06.png`,
+            `${import.meta.env.BASE_URL}EstrategiasdeComunicacion/LaLigadelCumplimiento/ILUSTRACIONES 2-07.png`,
+            `${import.meta.env.BASE_URL}EstrategiasdeComunicacion/LaLigadelCumplimiento/ILUSTRACIONES 2-08.png`,
+            `${import.meta.env.BASE_URL}EstrategiasdeComunicacion/LaLigadelCumplimiento/ILUSTRACIONES 2-09.png`,
+            `${import.meta.env.BASE_URL}EstrategiasdeComunicacion/LaLigadelCumplimiento/ILUSTRACIONES 2-10.png`,
+            `${import.meta.env.BASE_URL}EstrategiasdeComunicacion/LaLigadelCumplimiento/ILUSTRACIONES 2-11.png`,
+            `${import.meta.env.BASE_URL}EstrategiasdeComunicacion/LaLigadelCumplimiento/ILUSTRACIONES 3-02.png`,
+            `${import.meta.env.BASE_URL}EstrategiasdeComunicacion/LaLigadelCumplimiento/ILUSTRACIONES 3-03.png`,
+            `${import.meta.env.BASE_URL}EstrategiasdeComunicacion/LaLigadelCumplimiento/ILUSTRACIONES 3-04.png`,
+            `${import.meta.env.BASE_URL}EstrategiasdeComunicacion/LaLigadelCumplimiento/ILUSTRACIONES 3-05.png`,
+            `${import.meta.env.BASE_URL}EstrategiasdeComunicacion/LaLigadelCumplimiento/ILUSTRACIONES 3-06.png`,
+            `${import.meta.env.BASE_URL}EstrategiasdeComunicacion/LaLigadelCumplimiento/ILUSTRACIONES 3-07.png`,
+            `${import.meta.env.BASE_URL}EstrategiasdeComunicacion/LaLigadelCumplimiento/ILUSTRACIONES 3-08.png`,
+            `${import.meta.env.BASE_URL}EstrategiasdeComunicacion/LaLigadelCumplimiento/ILUSTRACIONES 3-09.png`,
+            `${import.meta.env.BASE_URL}EstrategiasdeComunicacion/LaLigadelCumplimiento/ILUSTRACIONES 3-10.png`,
+            `${import.meta.env.BASE_URL}EstrategiasdeComunicacion/LaLigadelCumplimiento/ILUSTRACIONES 3-11.png`,
+            `${import.meta.env.BASE_URL}EstrategiasdeComunicacion/LaLigadelCumplimiento/ILUSTRACIONES 3-12.png`,
+            `${import.meta.env.BASE_URL}EstrategiasdeComunicacion/LaLigadelCumplimiento/ILUSTRACIONES 3-13.png`,
+            `${import.meta.env.BASE_URL}EstrategiasdeComunicacion/LaLigadelCumplimiento/ILUSTRACIONES 3-14.png`,
+            `${import.meta.env.BASE_URL}EstrategiasdeComunicacion/LaLigadelCumplimiento/ILUSTRACIONES 3-15.png`,
+            `${import.meta.env.BASE_URL}EstrategiasdeComunicacion/LaLigadelCumplimiento/ILUSTRACIONES 3-16.png`,
+            `${import.meta.env.BASE_URL}EstrategiasdeComunicacion/LaLigadelCumplimiento/ILUSTRACIONES-02.png`,
+            `${import.meta.env.BASE_URL}EstrategiasdeComunicacion/LaLigadelCumplimiento/ILUSTRACIONES-03.png`,
+            `${import.meta.env.BASE_URL}EstrategiasdeComunicacion/LaLigadelCumplimiento/ILUSTRACIONES-04.png`,
+            `${import.meta.env.BASE_URL}EstrategiasdeComunicacion/LaLigadelCumplimiento/ILUSTRACIONES-05.png`,
+            `${import.meta.env.BASE_URL}EstrategiasdeComunicacion/LaLigadelCumplimiento/ILUSTRACIONES-06.png`,
+            `${import.meta.env.BASE_URL}EstrategiasdeComunicacion/LaLigadelCumplimiento/ILUSTRACIONES-07.png`,
+            `${import.meta.env.BASE_URL}EstrategiasdeComunicacion/LaLigadelCumplimiento/ILUSTRACIONES-08.png`,
+            `${import.meta.env.BASE_URL}EstrategiasdeComunicacion/LaLigadelCumplimiento/ILUSTRACIONES-09.png`,
+            `${import.meta.env.BASE_URL}EstrategiasdeComunicacion/LaLigadelCumplimiento/ILUSTRACIONES-10.png`,
+            `${import.meta.env.BASE_URL}EstrategiasdeComunicacion/LaLigadelCumplimiento/ILUSTRACIONES-11.png`,
+            `${import.meta.env.BASE_URL}EstrategiasdeComunicacion/LaLigadelCumplimiento/ILUSTRACIONES-12.png`,
+            `${import.meta.env.BASE_URL}EstrategiasdeComunicacion/LaLigadelCumplimiento/ILUSTRACIONES-13.png`,
+            `${import.meta.env.BASE_URL}EstrategiasdeComunicacion/LaLigadelCumplimiento/ILUSTRACIONES-14.png`,
+            `${import.meta.env.BASE_URL}EstrategiasdeComunicacion/LaLigadelCumplimiento/ILUSTRACIONES-15.png`,
+            `${import.meta.env.BASE_URL}EstrategiasdeComunicacion/LaLigadelCumplimiento/ILUSTRACIONES-16.png`,
+            `${import.meta.env.BASE_URL}EstrategiasdeComunicacion/LaLigadelCumplimiento/ILUSTRACIONES-17.png`,
+            `${import.meta.env.BASE_URL}EstrategiasdeComunicacion/LaLigadelCumplimiento/ILUSTRACIONES-18.png`,
+            `${import.meta.env.BASE_URL}EstrategiasdeComunicacion/LaLigadelCumplimiento/ILUSTRACIONES-20.png`
+          ]
+        }
+      ]
+    },
+    {
+      id: 5,
+      title: "Informe Ejecutivo Comité Regulatorio",
+      category: "Contenido y redacción",
+      image: `${import.meta.env.BASE_URL}ContenidoyRedaccion/BriefComiteRegulatorio/Brief Comité Regulatorio.png`, 
+      description: "Creación y diseño del Informe Ejecutivo del Comité Regulatorio, elaborado de manera bimestral. Este documento tiene como objetivo comunicar con anticipación a los integrantes del comité las iniciativas que se discutirán en la siguiente sesión, facilitando su comprensión mediante un lenguaje claro y el suministro de insumos clave, como las normas legales que respaldan cada iniciativa.",
+      pdf: `${import.meta.env.BASE_URL}ContenidoyRedaccion/InformeEjecutivoComiteRegulatorio/Informe Ejecutivo - Comité 16 de abril de 2026.pdf`
+    }
   ],
   categories: ["Todos", "Audiovisual", "Estrategias de comunicación", "Piezas gráficas", "Contenido y redacción"]
 };
@@ -289,8 +385,110 @@ const Skills = () => {
   );
 };
 
+const ProjectModal = ({ project, onClose }) => {
+  if (!project) return null;
+
+  return (
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      className="fixed inset-0 z-[100] flex items-center justify-center p-4 sm:p-6"
+    >
+      <div className="absolute inset-0 bg-background/80 backdrop-blur-sm" onClick={onClose}></div>
+      <motion.div
+        initial={{ y: 50, opacity: 0, scale: 0.95 }}
+        animate={{ y: 0, opacity: 1, scale: 1 }}
+        exit={{ y: 20, opacity: 0, scale: 0.95 }}
+        transition={{ duration: 0.3 }}
+        className="relative w-full max-w-5xl max-h-[90vh] bg-background border border-border rounded-2xl shadow-2xl overflow-y-auto flex flex-col z-10"
+      >
+        <div className="sticky top-0 bg-background/95 backdrop-blur-sm border-b border-border p-4 flex justify-between items-center z-20">
+          <div>
+            <h3 className="text-2xl font-light text-foreground">{project.title}</h3>
+            <span className="text-secondary font-medium uppercase text-xs tracking-wider">{project.category}</span>
+          </div>
+          <button
+            onClick={onClose}
+            className="p-2 text-muted-foreground hover:text-foreground hover:bg-muted rounded-full transition-colors"
+          >
+            <X size={24} />
+          </button>
+        </div>
+        
+        <div className="p-6 sm:p-8 space-y-8">
+          {project.description && (
+            <p className="text-lg text-muted-foreground font-light whitespace-pre-line leading-relaxed">
+              {project.description}
+            </p>
+          )}
+
+          {project.image && !project.images && !project.pdf && !project.sections && (
+            <div className="rounded-xl overflow-hidden border border-border">
+              <img src={project.image} alt={project.title} className="w-full object-contain max-h-[60vh] bg-muted/30" />
+            </div>
+          )}
+
+          {project.images && project.images.length > 0 && (
+            <div className="space-y-4">
+              <h4 className="text-xl font-light text-foreground border-b border-border pb-2">Galería</h4>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {project.images.map((img, idx) => (
+                  <div key={idx} className="rounded-xl overflow-hidden border border-border bg-muted/30">
+                    <img src={img} alt={`Slide ${idx + 1}`} className="w-full object-contain cursor-pointer hover:scale-105 transition-transform" />
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {project.pdf && (
+            <div className="space-y-4">
+              <div className="flex justify-between items-end border-b border-border pb-2">
+                <h4 className="text-xl font-light text-foreground">Documento</h4>
+                <a href={project.pdf} target="_blank" rel="noreferrer" className="text-sm text-primary hover:underline flex items-center">
+                  Abrir en nueva pestaña <ChevronRight size={16} />
+                </a>
+              </div>
+              <div className="w-full h-[600px] border border-border rounded-xl overflow-hidden bg-muted">
+                <iframe src={project.pdf} className="w-full h-full" title={project.title} />
+              </div>
+            </div>
+          )}
+
+          {project.sections && project.sections.map((sec, idx) => (
+            <div key={idx} className="space-y-6 pt-6 border-t border-border">
+              <h4 className="text-2xl font-light text-foreground">{sec.title}</h4>
+              <p className="text-lg text-muted-foreground font-light leading-relaxed">{sec.description}</p>
+              {sec.images && sec.images.length > 0 && (
+                <div className={`grid gap-4 ${sec.images.length > 1 ? 'grid-cols-2 md:grid-cols-3 lg:grid-cols-4' : 'grid-cols-1'}`}>
+                  {sec.images.map((img, i) => (
+                    <div key={i} className="rounded-xl overflow-hidden border border-border bg-muted/30 aspect-square flex items-center justify-center">
+                      <img src={img} alt={`${sec.title} ${i + 1}`} className="w-full h-full object-contain hover:scale-105 transition-transform" />
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
+          ))}
+
+        </div>
+      </motion.div>
+    </motion.div>
+  );
+};
+
 const Portfolio = () => {
   const [filter, setFilter] = useState("Todos");
+  const [selectedProject, setSelectedProject] = useState(null);
+
+  useEffect(() => {
+    if (selectedProject) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+  }, [selectedProject]);
 
   const filteredPortfolio = filter === "Todos"
     ? profileData.portfolio
@@ -336,6 +534,7 @@ const Portfolio = () => {
             {filteredPortfolio.map((item) => (
               <motion.div
                 key={item.id}
+                onClick={() => setSelectedProject(item)}
                 layout
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
@@ -348,14 +547,20 @@ const Portfolio = () => {
                   alt={item.title}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-                  <span className="text-secondary font-medium tracking-wider uppercase mb-1">{item.category}</span>
-                  <h4 className="text-white text-xl font-light">{item.title}</h4>
+                <div className="absolute inset-x-4 bottom-4 bg-background p-4 rounded-xl border border-border opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0 flex flex-col justify-end shadow-xl">
+                  <span className="text-secondary font-semibold tracking-wider uppercase mb-1 text-xs">{item.category}</span>
+                  <h4 className="text-foreground text-lg font-medium leading-tight">{item.title}</h4>
                 </div>
               </motion.div>
             ))}
           </AnimatePresence>
         </motion.div>
+
+        <AnimatePresence>
+          {selectedProject && (
+            <ProjectModal project={selectedProject} onClose={() => setSelectedProject(null)} />
+          )}
+        </AnimatePresence>
       </div>
     </section>
   );
