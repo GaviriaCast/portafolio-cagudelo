@@ -77,11 +77,6 @@ const profileData = {
       description: "Estrategia orientada a comunicar la evolución del Comité Regulatorio. En el contexto previo al Mundial 2026, se empleó un lenguaje futbolístico para facilitar la comprensión y promover la apropiación de los mensajes transversales, los cuales explican las nuevas reglas, roles, acompañamientos, métricas y expectativas.\n\nPúblico objetivo: Toda la organización.",
       sections: [
         {
-          title: "Fase pretemporada",
-          description: "Infográfico difundido por el área de Comunicaciones Corporativas a toda la organización. Su objetivo fue dar a conocer la información nueva y actualizada del Comité Regulatorio, promoviendo que tanto los colaboradores directamente involucrados como aquellos que no lo están se mantengan informados sobre sus novedades y su propósito.",
-          images: [`${import.meta.env.BASE_URL}EstrategiasdeComunicacion/LaLigadelCumplimiento/Diapositiva1_1.PNG`]
-        },
-        {
           title: "Íconos e ilustraciones",
           description: "Línea gráfica con temática de fútbol que refuerza el lenguaje utilizado para comunicar la estrategia.",
           images: [
@@ -132,6 +127,11 @@ const profileData = {
             `${import.meta.env.BASE_URL}EstrategiasdeComunicacion/LaLigadelCumplimiento/ILUSTRACIONES-18.png`,
             `${import.meta.env.BASE_URL}EstrategiasdeComunicacion/LaLigadelCumplimiento/ILUSTRACIONES-20.png`
           ]
+        },
+        {
+          title: "Fase pretemporada",
+          description: "Infográfico difundido por el área de Comunicaciones Corporativas a toda la organización. Su objetivo fue dar a conocer la información nueva y actualizada del Comité Regulatorio, promoviendo que tanto los colaboradores directamente involucrados como aquellos que no lo están se mantengan informados sobre sus novedades y su propósito.",
+          images: [`${import.meta.env.BASE_URL}EstrategiasdeComunicacion/LaLigadelCumplimiento/Diapositiva1_1.PNG`]
         }
       ]
     },
